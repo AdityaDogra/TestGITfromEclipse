@@ -37,7 +37,7 @@ public class Test_case_Listner extends Base_Utils implements ITestListener {
 		System.out.println(result.getMethod().getMethodName()+" got failed");
 		try {
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			screenshot(driver, result.getMethod().getMethodName() );
+			screenshot(driver, result.getMethod().getMethodName()+"Failed" );
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -60,7 +60,7 @@ public class Test_case_Listner extends Base_Utils implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
 		System.out.println(result.getMethod().getMethodName()+" got passed");
 		try {
-			screenshot(driver, result.getMethod().getMethodName() );
+			screenshot(driver, result.getMethod().getMethodName()+"Passed" );
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

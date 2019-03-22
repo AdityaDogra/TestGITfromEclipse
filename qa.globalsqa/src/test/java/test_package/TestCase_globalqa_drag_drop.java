@@ -6,11 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import main_package.Base_Utils;
+import main_package.Test_case_Listner;
 import test_Pages.Test_global_qa;
-
+@Listeners(Test_case_Listner.class)
 public class TestCase_globalqa_drag_drop extends Base_Utils{
 	 static Test_global_qa TGQA;
 	

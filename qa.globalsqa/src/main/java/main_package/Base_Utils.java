@@ -61,7 +61,7 @@ public class Base_Utils {
 
 		File screenshot_file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshot_file,
-				new File("G:\\Selenium Projects\\qa.globalsqa\\target\\Screenshots\\" + snipname+".png"));
+				new File("G:\\Selenium Projects\\Git Repos\\qa.globalsqa\\target\\Screenshots\\"+snipname+".png"));
 
 	}
 
