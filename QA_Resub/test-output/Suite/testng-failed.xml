@@ -6,14 +6,4 @@
       <class name="QA.Resubmission.trades.QA_Resub.Test_for_Google_Home"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)">
-    <classes>
-      <class name="QA.Resubmission.trades.QA_Resub.Test_for_Google_Home">
-        <methods>
-          <include name="test_google_search"/>
-          <include name="pre_actions"/>
-        </methods>
-      </class> <!-- QA.Resubmission.trades.QA_Resub.Test_for_Google_Home -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

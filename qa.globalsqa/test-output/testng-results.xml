@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="72055" started-at="2019-03-22T08:05:45Z" finished-at="2019-03-22T08:06:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="72055" started-at="2019-03-22T08:05:45Z" finished-at="2019-03-22T08:06:58Z">
+      <class name="test_package.Test_Case_globalqa_mul_selections">
+        <test-method status="PASS" signature="launch_up()[pri:0, instance:test_package.Test_Case_globalqa_mul_selections@d8355a8]" name="launch_up" is-config="true" duration-ms="38641" started-at="2019-03-22T13:35:45Z" finished-at="2019-03-22T13:36:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_up -->
+        <test-method status="PASS" signature="Test_multiple_selection_1()[pri:0, instance:test_package.Test_Case_globalqa_mul_selections@d8355a8]" name="Test_multiple_selection_1" duration-ms="11049" started-at="2019-03-22T13:36:24Z" finished-at="2019-03-22T13:36:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_multiple_selection_1 -->
+        <test-method status="PASS" signature="Test_multiple_selection_2()[pri:0, instance:test_package.Test_Case_globalqa_mul_selections@d8355a8]" name="Test_multiple_selection_2" duration-ms="1206" started-at="2019-03-22T13:36:36Z" finished-at="2019-03-22T13:36:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_multiple_selection_2 -->
+        <test-method status="PASS" signature="drawbox_to_select_elements()[pri:0, instance:test_package.Test_Case_globalqa_mul_selections@d8355a8]" name="drawbox_to_select_elements" duration-ms="19625" started-at="2019-03-22T13:36:38Z" finished-at="2019-03-22T13:36:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drawbox_to_select_elements -->
+      </class> <!-- test_package.Test_Case_globalqa_mul_selections -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
