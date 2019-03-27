@@ -22,19 +22,14 @@ import junit.framework.Assert;
 public class StepDefinition extends BaseUtil {
 	 ExtentReports extent;
 	    ExtentTest test;
-	    Scenario sc;
+	    
 	public StepDefinition() throws IOException {
 		super();
 	}
-	@Before
-	 public void init()
-    {
-      // this.sc = sc;
-		// extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentScreenshot.html", true);
-    }
+	
 	@After
 	public void cleanup(Scenario sc) throws IOException {
-		
+	System.out.println("the status are--->"+sc.getStatus());
 		
 		if(sc.isFailed()) {
 		takescreen(sc);
@@ -51,7 +46,7 @@ public class StepDefinition extends BaseUtil {
 	public void the_time_is_missing() throws Throwable {
 	    BaseUtil.Browserlaunch();
 	    driver.findElement(By.xpath("//a[@title='YASH Infogram']")).click();
-	    takescreen(sc);
+	  
 	 //  Assert.assertEquals(true, false);
 	    BaseUtil.switchwindows();
 	    BaseUtil.waitforelement(driver,"//div[@data-chipid='info-timeSheet']");
