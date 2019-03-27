@@ -45,6 +45,7 @@ Given enter the username and the password
 |Hello|Pass@154|
 |Pakoda|Pass@784|
 Then the result should be fine
+
 @sanity
 Scenario: testing datatables using asMaps method
 Given enter the username and the password to login

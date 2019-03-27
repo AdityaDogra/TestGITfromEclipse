@@ -1,5 +1,79 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" time="0">
-<testcase classname="dummy" name="dummy">
-<skipped message="No features found"/>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="0.288366">
+<testcase classname="how is cucumber." name="what we need to start learning cucumber" time="0.267707">
+<system-out><![CDATA[When This is from Background................................................passed
+Given we know what jars we need and how to create a runner class............passed
+When all the dependencies are imported......................................passed
+Then start writing the feature file.........................................passed
+And verify if you have learned something or not.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="how is cucumber." name="learn hooks" time="0.000315">
+<system-out><![CDATA[When This is from Background................................................passed
+Given read hooks online.....................................................passed
+When hooks we know..........................................................passed
+Then impliment hooks........................................................passed
+And verify hooks............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="how is cucumber." name="learn examples" time="0.002291">
+<system-out><![CDATA[When This is from Background................................................passed
+Given test data "Test Data 1" we know.......................................passed
+When test data is loaded....................................................passed
+Then impliment examples.....................................................passed
+And verify inputs...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="how is cucumber." name="learn examples 2" time="0.000248">
+<system-out><![CDATA[When This is from Background................................................passed
+Given test data "Test Data 2" we know.......................................passed
+When test data is loaded....................................................passed
+Then impliment examples.....................................................passed
+And verify inputs...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="how is cucumber." name="learn examples 3" time="0.000232">
+<system-out><![CDATA[When This is from Background................................................passed
+Given test data "Test Data 3" we know.......................................passed
+When test data is loaded....................................................passed
+Then impliment examples.....................................................passed
+And verify inputs...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="how is cucumber." name="learn how to tackle failures" time="0.014898">
+<failure message="java.lang.AssertionError: expected [false] but found [true]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertEqualsImpl(Assert.java:137)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:568)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:578)&#13;&#10;&#9;at test_cucumber.test_cucumber.stepdefi.this_is_where_sceanrio_fails(stepdefi.java:126)&#13;&#10;&#9;at ✽.When this is where sceanrio fails(G:/Selenium Projects/Git Repos/test_cucumber/src/test/java/test_cucumber/test_cucumber/testcoca.feature:38)&#13;&#10;"><![CDATA[When This is from Background................................................passed
+Given Sceanrio fails........................................................passed
+When this is where sceanrio fails...........................................failed
+Then the failure exception..................................................skipped
+And verify tackle...........................................................skipped
+
+StackTrace:
+java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at test_cucumber.test_cucumber.stepdefi.this_is_where_sceanrio_fails(stepdefi.java:126)
+	at ✽.When this is where sceanrio fails(G:/Selenium Projects/Git Repos/test_cucumber/src/test/java/test_cucumber/test_cucumber/testcoca.feature:38)
+]]></failure>
+</testcase>
+<testcase classname="how is cucumber." name="test datatables using Raw method" time="0.001997">
+<system-out><![CDATA[When This is from Background................................................passed
+Given enter the username and the password...................................passed
+Then the result should be fine..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="how is cucumber." name="testing datatables using asMaps method" time="0.000339">
+<system-out><![CDATA[When This is from Background................................................passed
+Given enter the username and the password to login..........................passed
+Then the result are there...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="how is cucumber." name="testing datatables while iterating the list" time="0.000339">
+<system-out><![CDATA[When This is from Background................................................passed
+Given enter the name and the pass to login1.................................passed
+Then the result.............................................................passed
+]]></system-out>
 </testcase>
 </testsuite>

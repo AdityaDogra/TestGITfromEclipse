@@ -1,14 +1,16 @@
 package test_cucumber.test_cucumber;
 
-import static org.junit.Assert.assertFalse;
 
+
+import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.http.util.Asserts;
+
 import org.testng.*;
 
-import org.testng.asserts.SoftAssert;
+
 
 import cucumber.api.DataTable;
 import cucumber.api.Scenario;
@@ -17,11 +19,11 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import cucumber.runtime.junit.Assertions;
-import junit.framework.Assert;
 
 
-public class stepdefi {
+
+
+public class stepdefi extends BaseUtil {
 	
 	@When("^This is from Background$")
 	public void This_is_from_Background() throws Throwable {
@@ -34,16 +36,15 @@ public class stepdefi {
 	}
 	
 	@After
-	public void cleanup(Scenario sc) {
-		
+	public void cleanup(Scenario sc) throws IOException {
 		
 		if(sc.isFailed()) {
-		System.out.println("the screenshot is taken on failure");
-	}
-		else {
-			System.out.println("All cleanup is done and this will trigger after each scenario");
-			
-		}	
+			System.out.println("the screenshot is taken on failure from step defi");
+		}
+			else {
+				System.out.println("All cleanup is done and this will trigger after each scenario");
+				
+			}
 	
 	}
 	
@@ -123,6 +124,7 @@ public class stepdefi {
 	@When("^this is where sceanrio fails$")
 	public void this_is_where_sceanrio_fails() throws Throwable {
 		System.out.println("this is where assert fails");
+		 org.testng.Assert.assertEquals(true, false);
 		
 		
 	}
@@ -148,6 +150,7 @@ public class stepdefi {
 	@Then("^the result should be fine$")
 	public void the_result_should_be_fine() throws Throwable {
 	   System.out.println("It worked well");
+	  
 	}
 	
 	@Given("^enter the username and the password to login$")
@@ -170,7 +173,7 @@ public class stepdefi {
 
 	@Then("^the result$")
 	public void the_result() throws Throwable {
-	  System.out.println("go to hell");
+	  System.out.println("well we are done!");
 	}
 
 }

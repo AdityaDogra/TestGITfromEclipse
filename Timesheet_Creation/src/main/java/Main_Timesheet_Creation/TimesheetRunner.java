@@ -1,4 +1,4 @@
-package test_cucumber.test_cucumber;
+package Main_Timesheet_Creation;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,20 +10,18 @@ import com.cucumber.listener.Reporter;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="G:\\Selenium Projects\\Git Repos\\test_cucumber\\src\\test\\java\\test_cucumber\\test_cucumber\\testcoca.feature",
-		glue= {"test_cucumber.test_cucumber"}
-		,plugin = { "pretty", "html:test-output", "json:json_output/cucumber.json",
-				"junit:junit_xml/cucumber.xml","rerun:target/rerun.txt", "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" }, 
-				monochrome=true,
-				
+		features = "G:\\Selenium Projects\\Timesheet_Creation\\src\\test\\java\\Feature\\FillTime.feature", 
+		glue = {"stepdefinition"}, 
+		plugin = { "pretty", "html:test-output", "json:json_output/cucumber.json",
+				"junit:junit_xml/cucumber.xml","rerun:target/rerun.txt" ,"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}, 
 		strict = true,
 		dryRun = false )
-		//tags= {"@sanity","@Regression"})
 
-public class Runner extends BaseUtil{
-
+public class TimesheetRunner {
 	 @AfterClass
 	 public static void writeExtentReport() throws IOException {
 	 Reporter.loadXMLConfig(new File("G:\\Selenium Projects\\Git Repos\\test_cucumber\\src\\main\\java\\test_cucumber\\test_cucumber\\Extent-config.xml") );
@@ -35,8 +33,4 @@ public class Runner extends BaseUtil{
      Reporter.setSystemInfo("Java Version", "1.8.0_151");
 	 
 	 }
-	}
-
-
-	
-	
+}
