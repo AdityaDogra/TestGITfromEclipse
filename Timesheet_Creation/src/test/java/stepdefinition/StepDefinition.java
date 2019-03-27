@@ -27,9 +27,9 @@ public class StepDefinition extends BaseUtil {
 		super();
 	}
 	@Before
-	 public void init(Scenario sc)
+	 public void init()
     {
-       this.sc = sc;
+      // this.sc = sc;
 		// extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentScreenshot.html", true);
     }
 	@After
